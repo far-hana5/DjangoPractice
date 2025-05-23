@@ -4,6 +4,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def machine(request):
-    return HttpResponse("Hello, Django App!")
+    return render(request,'machinelearing/machineLearning.html')
 
 
+
+def supervised(request):
+    return render(request,'machinelearing/superviesdLearning.html')
+
+def DT(request):
+    return render(request,'machinelearing/DT.html')
